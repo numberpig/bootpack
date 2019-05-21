@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="工作台">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Window-target" content="_top">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="lib/bootstrap3.4/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css">
+    <!-- <link rel="stylesheet" href="css/layout.css"> -->
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/workspace.css" rel="stylesheet">
+    <script src="lib/jquery.js"></script>
+    <script src="lib/bootstrap3.4/js/bootstrap.min.js"></script>
+    <script src="lib/calendar.js"></script>
+    <script>
+        $(function() {
+            $('a[data-toggle="tab"]').on('shown.bs.tab', function(e) {
+                // 获取已激活的标签页的名称
+                var activeTab = $(e.target).text();
+                // 获取前一个激活的标签页的名称
+                var previousTab = $(e.relatedTarget).text();
+                $(".active-tab span").html(activeTab);
+                $(".previous-tab span").html(previousTab);
+            });
+        });
+
+
+        $(function() {
+            dorseyUI.dcCalendar($('.dcCalendarAddLunar'));
+
+        });
+    </script>
+</head>
+
+<body class="workplatform">
+    <!-- header -->
+    <div class="header">
+        <img src="img/logo.png" alt="" class="logo">
+        <span class="system_name">集团办公门户</span>
+        <!-- 搜索 -->
+        <div class="pull-right text-right">
+            <img src="img/ad.jpg" alt="" class="head_portrait"> 黎志刚 您好！<a href="">注销</a>
+            <div class="input-group">
+                <div class="input-icon">
+                    <i class="icon-magnifier"></i>
+                    <input class="form-control" type="text" placeholder="全文搜索">
+                </div>
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">搜索</button>
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 导航 -->
+    <div class="nav workspace">
+        <ul>
+            <li>首页</li>
+            <li class="active">办事大厅</li>
+            <li>一网通办</li>
+            <li>新闻中心</li>
+            <li>领导驾驶舱</li>
+            <li>党务门户</li>
+            <li>廉洁之风</li>
+            <li>下属单位门户</li>
+        </ul>
+    </div>
+    <div class="container-fluid workspaceTodo">
+        <ul id="todoTab" class="nav nav-tabs">
+            <li class="active">
+                <a href="#todo" data-toggle="tab"> 我的待办</a>
+            </li>
+            <li><a href="#done" data-toggle="tab">我的已办</a></li>
+            <li><a href="#toread" data-toggle="tab">我的待阅</a></li>
+            <li><a href="#readed" data-toggle="tab">我的已阅</a></li>
+            <li><a href="#attention" data-toggle="tab">我的关注</a></li>
+
+        </ul>
+        <div id="todoTabContent" class="tab-content">
+            <div class="tab-pane fade in active" id="todo" style="padding-top:10px;">
+                <table class="table table-striped todotable">
+                    <thead>
+                        <tr class="info">
+                            <th>序号</th>
+                            <th>来源</th>
+                            <th>标题</th>
+                            <th>紧急程度</th>
+                            <th>日期</th>
+                            <th>提交人</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Bangalore</td>
+                            <td>关于春节放假的通知</td>
+                            <td>紧急</td>
+                            <td>2012-12-12</td>
+                            <td>张三</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>托尔斯泰</td>
+                            <td>安全生产检查刻不容缓</td>
+                            <td>紧急</td>
+                            <td>2012-12-12</td>
+                            <td>李四</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Bangalore</td>
+                            <td>关于春节放假的通知</td>
+                            <td>紧急</td>
+                            <td>2012-12-12</td>
+                            <td>张三</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>托尔斯泰</td>
+                            <td>安全生产检查刻不容缓</td>
+                            <td>紧急</td>
+                            <td>2012-12-12</td>
+                            <td>李四</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>休息休息</td>
+                            <td>安全生产检查刻不容试试缓</td>
+                            <td>紧急</td>
+                            <td>2012-12-12</td>
+                            <td>李四</td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="tab-pane fade" id="done" style="padding-top:10px;">
+                <table class="table table-striped">
+                    <thead>
+                        <tr class="info">
+                            <th>序号</th>
+                            <th>来源</th>
+                            <th>标题</th>
+                            <th>紧急程度</th>
+                            <th>日期</th>
+                            <th>提交人</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Bangalore</td>
+                            <td>关于春节放假的通知</td>
+                            <td>紧急</td>
+                            <td>2012-12-12</td>
+                            <td>张三</td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="tab-pane fade" id="toread" style="padding-top:10px;">
+                <table class="table table-striped">
+                    <thead>
+                        <tr class="info">
+                            <th>序号</th>
+                            <th>来源</th>
+                            <th>标题</th>
+                            <th>紧急程度</th>
+                            <th>日期</th>
+                            <th>提交人</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Bangalore</td>
+                            <td>关于春节放假的通知</td>
+                            <td>紧急</td>
+                            <td>2012-12-12</td>
+                            <td>张三</td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tab-pane fade" id="readed" style="padding-top:10px;">
+                <table class="table table-striped">
+                    <thead>
+                        <tr class="info">
+                            <th>序号</th>
+                            <th>来源</th>
+                            <th>标题</th>
+                            <th>紧急程度</th>
+                            <th>日期</th>
+                            <th>提交人</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Bangalore</td>
+                            <td>关于春节放假的通知</td>
+                            <td>紧急</td>
+                            <td>2012-12-12</td>
+                            <td>张三</td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tab-pane fade" id="attention" style="padding-top:10px;">
+                <table class="table table-striped">
+                    <thead>
+                        <tr class="info">
+                            <th>序号</th>
+                            <th>来源</th>
+                            <th>标题</th>
+                            <th>紧急程度</th>
+                            <th>日期</th>
+                            <th>提交人</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Bangalore</td>
+                            <td>关于春节放假的通知</td>
+                            <td>紧急</td>
+                            <td>2012-12-12</td>
+                            <td>张三</td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="pagers  form-group">
+
+
+            <span class="pagerinfo">
+                每页
+                    <select class="form-control">
+                      <option>10</option>
+                       <option>20</option>
+                    </select> 条,共10页 
+
+            </span>
+
+            <ul class="pagination">
+                <li><a href="#">&laquo;</a></li>
+                <li> <a href="#">上一页</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">上一页</a></li>
+                <li><a href="#">&raquo;</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+
+
+    <!-- lll -->
+    <div class="container-fluid">
+        <ul id="myTab" class="nav nav-tabs">
+            <li class="active">
+                <a href="#todo" data-toggle="tab"> 我的日程</a>
+            </li>
+
+
+        </ul>
+        <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade in active">
+                <div class="cal">
+                    <div class="dc_calendar">
+                        <div class="dcCalendarAddLunar" id="dcCalendar"></div>
+
+                    </div>
+                    <div class="rightEvent">
+                        <div class="calContentHeader">
+
+                        </div>
+                        <div class="dcCalendarContent" id="dcCalendarContent">
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <div class="row" style="padding-left:15px;">
+
+        <div class="col-md-3">
+            <div class="usefullLink">
+                <div class="often_system">
+                    <h4>常用系统</h4><br>
+                    <a href="">OA系统</a>
+                    <a href="">合同法务</a>
+                    <a href="">一网通办</a>
+                    <a href="">邮件系统</a>
+                    <a href="">电科商城</a>
+                    <a href="">知识平台</a>
+                    <a href="">档案系统</a>
+                    <a href="">温馨家园</a>
+                    <a href="">资源共享</a>
+                </div>
+                <div class="link_page">
+                    <i class="fa fa-caret-left"></i>
+                    <i class="fa fa-caret-right"></i>
+                </div>
+
+            </div>
+            <div class="quikpass">
+                <dl class="quick pass">
+                    <dt>快速通道</dt>
+                    <dd>
+                        <i class="fa fa-pencil-square-o"></i><br>集团发文
+                    </dd>
+                    <dd>
+                        <i class="fa fa-desktop"></i><br>集团收文
+                    </dd>
+                    <dd>
+                        <i class="fa fa-paper-plane"></i><br>外出登记
+                    </dd>
+                    <dd>
+                        <i class="fa fa-calendar"></i><br>会议室预约
+                    </dd>
+                </dl>
+                <div class="link_page">
+                    <i class="fa fa-caret-left"></i>
+                    <i class="fa fa-caret-right"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-9">
+            <div class="container-fluid">
+                <ul id="myTab" class="nav nav-tabs">
+                    <li class="active">
+                        <a href="#todo" data-toggle="tab"> 我的邮件</a>
+                    </li>
+
+
+                </ul>
+                <div id="mailTabContent" class="tab-content">
+                    <div class="tab-pane fade in active">
+                        <table class="table table-striped mailtable" style="margin-top:5px;">
+                            <thead>
+                                <tr class="info">
+                                    <th>收件人</th>
+                                    <th>主题</th>
+                                    <th>日期</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>张三</td>
+                                    <td>关于春节放假的通知</td>
+                                    <td>2012-12-12</td>
+                                </tr>
+                                <tr>
+                                    <td>张三</td>
+                                    <td>关于春节放假的通知</td>
+                                    <td>2012-12-12</td>
+                                </tr>
+                                <tr>
+                                    <td>张三</td>
+                                    <td>关于春节放假的通知</td>
+                                    <td>2012-12-12</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+            <div class="container-fluid">
+                <ul id="myTab" class="nav nav-tabs">
+                    <li class="active">
+                        <a href="#todo" data-toggle="tab">服务地图</a>
+                    </li>
+
+
+                </ul>
+                <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade in active">
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="copyright">
+        <a href="">版权声明</a>　|
+        <a href="">联系我们</a>　|
+        <a href="">网站地图</a> 　|
+        <a href="">隐私与安全</a><br> 地址：北京海淀区万寿路27号　　电话：010-68200821 68200880　　邮编：100846 <br> 网站管理信箱：cetc@cetc.com.cn　　版权所有：中国电子科技集团有限公司　　备案序号：鄂ICP证010060
+    </div>
+</body>
+
+</html>

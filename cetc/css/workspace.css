@@ -1,0 +1,308 @@
+.header {
+    width: 1200px;
+    height: 95px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.logo {
+    float: left;
+    margin-right: 15px;
+}
+
+.system_name {
+    font-size: 24px;
+    margin-top: 7px;
+    display: inline-block;
+}
+
+.header .pull-right {
+    width: 300px;
+}
+
+.header .input-icon i {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 3;
+    color: #999;
+}
+
+.input-group .form-control:last-child {
+    border-radius: 4px 0 0 4px!important;
+    padding-left: 28px;
+}
+
+.workspace.nav {
+    background: #0d61b8;
+    border-bottom: 3px solid #cb3322;
+    height: 50px;
+}
+
+.workspace.nav ul {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.workspace.nav li {
+    padding: 0 25px;
+    float: left;
+    line-height: 47px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #fff
+}
+
+.workspace.nav li.active {
+    background: #cb3322
+}
+
+.workspace.nav li.active:hover {
+    background: linear-gradient(92deg, rgba(112, 58, 240, 1) 0%, rgba(0, 120, 229, 1) 100%);
+}
+
+.workspaceTodo {
+    margin: 15px 0px;
+}
+
+.quick {
+    position: relative;
+    padding-left: 50px;
+}
+
+.quick dt {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30px;
+    font-size: 14px;
+    height: 190px;
+    background: #ee5b51;
+    padding: 50px 0 0 9px;
+    color: #fff
+}
+
+.quick dd {
+    width: 112px;
+    height: 95px;
+    float: left;
+    text-align: center;
+    margin-top: 5px;
+    cursor: pointer
+}
+
+.usefullLink {
+    display: inline-block;
+    background: #fff;
+}
+
+.links dd {
+    width: 100px;
+    height: 25px;
+    float: left;
+    text-align: center;
+    margin: 1px;
+    cursor: pointer;
+    background: #eee;
+    padding-top: 3px;
+}
+
+.datum dd span {
+    width: 54px;
+    height: 54px;
+    background: #eaeaea;
+    border-radius: 100%;
+    text-align: center;
+    display: block;
+    margin: 0 auto 5px;
+    padding-top: 13px;
+}
+
+.datum dd span:hover {
+    background: #e0e0e0;
+}
+
+.datum dd span i {
+    font-size: 28px;
+}
+
+.link_page {
+    right: 10px;
+    top: 0;
+    font-size: 26px;
+    color: #ccc
+}
+
+.link_page i:hover {
+    color: #666;
+    cursor: pointer;
+}
+
+.pass i {
+    font-size: 36px;
+    color: #ee5b51;
+    margin: 11px 0;
+}
+
+.pass dd:hover i {
+    color: #e73d35;
+}
+
+.often_system h4 {
+    background: #ee5b51;
+    width: 85px;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.often_system a {
+    background: #f0f0f0;
+    font-size: 16px;
+    float: left;
+    margin: 2px 2px 0 0;
+    width: 90px;
+    height: 48px;
+    line-height: 48px;
+    padding-left: 10px;
+}
+
+.often_system a:hover {
+    background: #e0e0e0;
+    text-decoration: none;
+}
+
+.topic {
+    padding: 0 45px;
+    position: relative;
+}
+
+.topic img {
+    border: 1px solid #ddd;
+    padding: 1px;
+    background: #fff
+}
+
+.topic .prev,
+.topic .next {
+    position: absolute;
+    top: 15px;
+    width: 27px;
+    height: 65px;
+    line-height: 65px;
+    background: #f0f0f0;
+    text-align: center;
+    font-family: "å®‹ä½“";
+    font-weight: bold;
+    font-size: 20px;
+    color: #999;
+    cursor: pointer;
+}
+
+.topic .prev:hover,
+.topic .next:hover {
+    background: #e0e0e0
+}
+
+.topic .prev {
+    left: 0
+}
+
+.topic .next {
+    right: 0
+}
+
+.server {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background: url("../img/server_bg.jpg") no-repeat right -300px;
+}
+
+.server .row {
+    margin: 0;
+}
+
+.server .listTitle {
+    color: #ec4c40;
+    font-size: 16px;
+    position: relative;
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.server .listTitle:before {
+    content: "";
+    width: 4px;
+    height: 18px;
+    background: #ec4c40;
+    position: absolute;
+    left: 5px;
+    top: 8px;
+}
+
+.server .col-md-4 {
+    border-left: 1px dotted #ddd;
+    padding: 15px 150px 15px 20px;
+    margin-left: -1px;
+}
+
+.server .col-md-4 a {
+    position: relative;
+    width: 100px;
+    display: inline-block;
+    padding-left: 15px;
+    line-height: 30px;
+}
+
+.server .col-md-4 a:before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    background: #ccc;
+    position: absolute;
+    left: 5px;
+    top: 13px;
+}
+
+.server .bg_1,
+.server .bg_2 {
+    background: url("../img/server_bg.jpg") no-repeat right top;
+}
+
+.server .bg_2 {
+    background-position: right -150px;
+}
+
+.copyright {
+    margin-top: 50px;
+    height: 120px;
+    line-height: 26px;
+    background: #d3dbdf;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.workplatform .table>thead>tr>th {
+    vertical-align: bottom;
+    border-bottom: 0px solid #ddd;
+}
+
+.todotable,
+.mailtable {
+    border: 1px solid #eee;
+}
+
+.todotable.table-striped>tbody>tr:nth-of-type(odd),
+.mailtable.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: #eff7fb;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: #eff7fb;
+}

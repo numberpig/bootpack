@@ -4,7 +4,7 @@
     "description": "cis info",
     "main": "app/app.js",
     "scripts": {
-        "start": "concurrently 'lite-server --entry-file=index.html' 'webpack --watch'",
+        "start": "concurrently 'lite-server --entry-file=cetc/index.html' 'webpack --watch'",
         "build": " 'webpack --watch'"
     },
     "author": "wxl",
