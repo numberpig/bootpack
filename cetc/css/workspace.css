@@ -20,6 +20,11 @@
     width: 300px;
 }
 
+
+/* .workplatform .col-md-9 .col-md-9 {
+    padding: 0;
+} */
+
 .header .input-icon i {
     position: absolute;
     left: 10px;
@@ -67,7 +72,7 @@
 
 .quick {
     position: relative;
-    padding-left: 50px;
+    padding-left: 30px;
 }
 
 .quick dt {
@@ -77,18 +82,19 @@
     width: 30px;
     font-size: 14px;
     height: 190px;
-    background: #ee5b51;
+    background: #999;
     padding: 50px 0 0 9px;
     color: #fff
 }
 
 .quick dd {
-    width: 112px;
-    height: 95px;
+    width: 119px;
+    height: 91px;
     float: left;
     text-align: center;
-    margin-top: 5px;
-    cursor: pointer
+    margin: 2px;
+    cursor: pointer;
+    background: #fcf6e9;
 }
 
 .quickpass {
@@ -138,6 +144,19 @@
     top: 0;
     font-size: 26px;
     color: #ccc
+}
+
+.servicemap .link_page {
+    right: 25px;
+    top: 0;
+    font-size: 26px;
+    color: #ccc;
+    position: absolute;
+}
+
+.servicemap .more {
+    float: right;
+    margin-right: 25px;
 }
 
 .link_page i:hover {
@@ -315,9 +334,10 @@
 }
 
 .servicemap dl {
-    width: 220px;
+    width: 180px;
     float: left;
     padding-top: 10px;
+    position: relative;
 }
 
 .servicemap a {
@@ -345,4 +365,16 @@
     position: absolute;
     left: -10px;
     top: 10px;
+}
+
+.workplatform .jinji1.fa-lightbulb::before {
+    color: #4dd48b;
+}
+
+.workplatform .jinji2.fa-lightbulb::before {
+    color: #feb544;
+}
+
+.workplatform .jinji3.fa-lightbulb::before {
+    color: #fa4040;
 }

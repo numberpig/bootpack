@@ -528,9 +528,10 @@
                             month0 < 0 ? month0 = 11 : month0;
                             tdObj.html(rel + monthDates[month0]).css("opacity", "0.3");
                         } else if (rel > monthDates[month]) {
-                            tdObj.html(rel - monthDates[month]).css("opacity", "0.4");
-                        } else {
 
+                            tdObj.html(rel - monthDates[month]).css("opacity", "0.3");
+                        } else {
+                            tdObj.html(rel - monthDates[month]).css("opacity", "1");
                             var a = rel + arr[0] - 1;
                             var m = month - arr[1] + 1,
                                 y = year;
@@ -550,7 +551,7 @@
 
                             if (rel === thisTime[2] && year === thisTime[0] && month === thisTime[1]) {
                                 tdObj.css("color", "red");
-                                console.log(thisTime)
+
                             } else {
                                 tdObj.css("color", "#666");
                             }
@@ -613,7 +614,9 @@
 
             $tBody.find('td').each(function() {
                 $(this).click(function(e) {
-
+                    if ($(this).css("opacity") == '0.3') {
+                        return;
+                    }
                     var curSelDate = $(this).data().dateVal ? $(this).data().dateVal.split("-") : "";
                     if (curSelDate) {
                         curSelDate[1] = curSelDate[1] - 1
@@ -621,7 +624,7 @@
                             curSelDate[1] = 12
                         }
                         var dtToday = new Date(curSelDate[0], curSelDate[1], curSelDate[2], 12);
-                        console.log(dtToday)
+
                         var copiedDate = new Date(dtToday.getTime());
                         updateRightContentHeader(dtToday, copiedDate)
                     }

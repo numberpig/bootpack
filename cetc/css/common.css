@@ -29,6 +29,8 @@
 
 .calendarTableContent {
     border: 1px solid #eee;
+    table-layout: fixed;
+    width: 100%;
 }
 
 .dcCalendarCValues {
@@ -38,19 +40,16 @@
 }
 
 .calendarTableContent th {
-    width: 122px;
-    background: #dae7f5;
     text-align: center;
-    color: #797575;
     font-weight: 400;
 }
 
-.calendarTableContent th {
-    width: 122px;
-    background: #dae7f5;
-    text-align: center;
-    color: #797575;
-    font-weight: 400;
+.rightTh tr {
+    /* background-color: #dae7f5; */
+    color: #5b5b5b;
+    /* background-image: linear-gradient(360deg, #138DDC 0%, #747AE4 100%); */
+    /* color: #fff; */
+    background-image: linear-gradient(180deg, #dae7f5 5%, rgb(230, 231, 240) 23%, #ffffff 100%);
 }
 
 .calContentHeader {
@@ -62,6 +61,7 @@
 .calendarTableContent .afternoon {
     height: 108px;
     border: 1px solid #eee;
+    text-align: center;
 }
 
 .calendarTableContent .mornning td,
@@ -258,8 +258,18 @@ a {
 
 .calendarTable thead {
     color: #5e5c5c;
-    background-image: linear-gradient(180deg, #F7E365 5%, #F5F0CD 23%, #ffffff 100%);
+    /* background-image: linear-gradient(180deg, #F7E365 5%, #F5F0CD 23%, #ffffff 100%); */
+    background-image: linear-gradient(180deg, #dae7f5 5%, rgb(230, 231, 240) 23%, #ffffff 100%);
 }
+
+
+/* .calendarTable thead {
+      color: #e6e0e0;
+    background-color: #607EF7;
+    background-image: linear-gradient(360deg, #138DDC 0%, #747AE4 100%); 
+    background-color: #dae7f5;
+    color: #5b5b5b;
+} */
 
 .dcCalendarAddLunar {
     width: 100%;
@@ -390,10 +400,19 @@ a {
     transform: translate3d(2px, -2px, 0)
 }
 
+#dcCalendarContent thead>tr>th:nth-child(1) {
+    width: 50px;
+}
+
 .dcCalendar:after {
     content: "";
     display: block;
     clear: both
+}
+
+.cal {
+    padding: 0;
+    margin-top: 5px;
 }
 
 .dcAccordion {
@@ -469,4 +488,8 @@ a {
 .evts {
     font-size: 12px;
     font-style: normal;
+    display: inline-block;
+    height: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
