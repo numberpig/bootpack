@@ -91,9 +91,16 @@
     cursor: pointer
 }
 
+.quickpass {
+    display: inline-block;
+    border: 1px solid #eee;
+    margin-top: 10px;
+}
+
 .usefullLink {
     display: inline-block;
     background: #fff;
+    border: 1px solid #eee;
 }
 
 .links dd {
@@ -305,4 +312,37 @@
 
 .table-striped>tbody>tr:nth-of-type(odd) {
     background-color: #eff7fb;
+}
+
+.servicemap dl {
+    width: 220px;
+    float: left;
+    padding-top: 10px;
+}
+
+.servicemap a {
+    color: #7b7d86;
+    display: block;
+    line-height: 28px;
+}
+
+.hotline {
+    position: relative;
+}
+
+.workplatform .fa-angle-left:before,
+.workplatform .fa-angle-right:before {
+    color: #666;
+    font-size: 20px;
+}
+
+.hotline:before {
+    height: 120px;
+    width: 1px;
+    background: #eee;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: -10px;
+    top: 10px;
 }

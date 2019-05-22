@@ -1,6 +1,6 @@
 .dc_calendar {
     width: 25%;
-    height: 310px;
+    height: 290px;
     margin: 2px 0px 0px 0;
     color: #ccc;
     display: inline-block;
@@ -12,27 +12,60 @@
     width: 74%;
 }
 
+.mcBtn {
+    cursor: pointer;
+}
+
 .calContentHeader {
-    height: 48px;
+    height: 38px;
+    display: table;
+}
+
+.calendarContentBtn {
+    margin-top: 15px;
+    font-size: 16px;
+    color: slategrey;
 }
 
 .calendarTableContent {
     border: 1px solid #eee;
 }
 
+.dcCalendarCValues {
+    margin: 0px 30px;
+    color: #666;
+    font-style: normal;
+}
+
 .calendarTableContent th {
     width: 122px;
     background: #dae7f5;
+    text-align: center;
+    color: #797575;
+    font-weight: 400;
+}
+
+.calendarTableContent th {
+    width: 122px;
+    background: #dae7f5;
+    text-align: center;
+    color: #797575;
+    font-weight: 400;
+}
+
+.calContentHeader {
+    text-align: center;
+    width: 100%;
 }
 
 .calendarTableContent .mornning,
-.calendarTableContent .afternong {
+.calendarTableContent .afternoon {
     height: 108px;
     border: 1px solid #eee;
 }
 
 .calendarTableContent .mornning td,
-.calendarTableContent .afternong td {
+.calendarTableContent .afternoon td {
     border-right: 1px solid #eee;
 }
 
@@ -44,8 +77,10 @@
     position: absolute;
     width: 8px;
     height: 8px;
-    background-color: #b5b0b0;
+    background-color: #da1616;
     border-radius: 4px;
+    right: 1px;
+    top: 5px;
 }
 
 html,
@@ -228,10 +263,9 @@ a {
 
 .dcCalendarAddLunar {
     width: 100%;
-    height: 284px;
+    height: 288px;
     overflow: hidden;
     min-height: 230px;
-    border: 1px solid;
     padding: 0 0;
     box-sizing: border-box;
     position: relative;
@@ -246,17 +280,18 @@ a {
 
 .dcCalendarAddLunar .calendarBtn {
     width: 100%;
-    padding: 0 2%;
+    padding: 0;
     box-sizing: border-box
 }
 
 .dcCalendarAddLunar .calendarBtn .dcCalendarValues {
     width: 50%;
-    height: 3em;
+    height: 20px;
     float: left;
     font-size: 1em;
     text-align: center;
-    line-height: 3em
+    line-height: 42px;
+    color: #5d5b5b;
 }
 
 .dcCalendarAddLunar .calendarBtn .mBtn,
@@ -273,6 +308,10 @@ a {
     -o-box-shadow: -1px 1px 2px #fff;
     cursor: pointer;
     margin: 0 6%
+}
+
+.calendarContentTbody td.currentSelect {
+    background-color: #fdf8e9;
 }
 
 .dcCalendarAddLunar .calendarBtn .yBtn {
@@ -299,7 +338,8 @@ a {
     margin-top: 0px;
     padding: 10px;
     box-sizing: border-box;
-    text-align: center
+    text-align: center;
+    border: 1px solid #eee;
 }
 
 .dcCalendarAddLunar .calendarTable th {
@@ -309,11 +349,13 @@ a {
 .dcCalendarAddLunar .calendarTable td {
     cursor: pointer;
     transition: .1s;
-    padding: 2px 0
+    padding: 1px 0;
+    position: relative;
+    height: 37px;
 }
 
 .dcCalendarAddLunar .calendarTable td.selected {
-    background-color: coral;
+    background-color: #fab804;
 }
 
 .dcCalendarAddLunar .calendarTable td p {
@@ -422,4 +464,9 @@ a {
 .pagerinfo .form-control {
     display: inline-block;
     width: 60px;
+}
+
+.evts {
+    font-size: 12px;
+    font-style: normal;
 }
