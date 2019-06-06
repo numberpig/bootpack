@@ -1,0 +1,123 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html,body,div,ul,li,dl,dt,dd,p,nav,header{margin: 0;padding: 0;}
+html,body{height: 100%}
+body{font-size: 16px; color: #fff;}
+a:link {color: #fff;text-decoration: none}
+a:visited {color: #fff;text-decoration: none}
+a:hover {color: #62ffff;text-decoration: none;}
+a:active {color: #fff;  text-decoration: none;}
+li{list-style: none;}
+
+body{
+	background-image:url('../img/bg.jpg');background-attachment:fixed;
+	background-repeat:no-repeat;
+	background-size:100% 100%;}
+/* header */
+header{ height: 78px; padding: 0 30px;
+    background: -webkit-linear-gradient(transparent, rgba(255,255,255,.2)); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(transparent, rgba(255,255,255,.2)); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(transparent, rgba(255,255,255,.2)); /* Firefox 3.6 - 15 */
+    background: linear-gradient(transparent, rgba(255,255,255,.2)); /* 标准的语法（必须放在最后） */}
+.logo{float: left; margin-top: 15px;}
+.banner{width: 100%; height: 78px; position: absolute; left: 0; top: 0; text-align: center; background: url("../img/banner.png") no-repeat center;}
+.user_info{float: right; margin-top: 15px; position: relative; font-size: 14px; padding:2px 0 0 60px;}
+.head_portrait{width: 48px;height: 48px;border-radius: 48px; border:2px solid rgba(255,255,255,.5); position: absolute; left: 0; top: 0}
+
+/* nav */
+nav{background: rgba(0,0,0,.3); height: 50px; padding-left: 30px; margin-bottom: 30px;}
+nav a{padding: 0 30px; line-height: 50px; display: inline-block; font-size: 18px;}
+nav a:hover{background: rgba(49,168,233,.2); color: #fff; text-decoration: none;}
+nav a.active{background: #dc4451}
+
+/* 今日电科 */
+.listTitle{padding-left:20px; margin-bottom: 10px;font-size: 18px; position: relative;line-height: 40px;}
+.listTitle:before{content:"";width: 4px; height: 25px; background: rgba(255,255,255,.3); position: absolute; left: 5px; top: 8px;}
+.new_primary{position: relative; padding-left: 210px; height: 130px; display: block; line-height: 26px;}
+.new_primary img{position: absolute; left: 0; top: 0}
+.new_primary .time{ margin-top: 10px; display: block;}
+.new_primary a{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;}
+
+.time{color: rgba(255,255,255,.5);}
+.listTitle .more{font-size: 16px;float: right;margin-right: 10px; font-weight: normal;}
+.more span{font-family: "宋体"; padding-left: 5px;}
+.listBody {margin-top: 10px;}
+.listBody li{position: relative; padding-left: 15px;height: 34px; line-height: 34px;}
+.listBody li:before{content:""; display:block;position: absolute; left: 0; top: 14px;background: rgba(255,255,255,.5);width: 4px;height: 4px;}
+.listBody li a{white-space: nowrap; width: 75%;text-overflow: ellipsis; overflow: hidden; display: block;}
+.listBody .time{ position: absolute;right: 0; top: 0; }
+
+/*待办*/
+.nav-tabs .badge{ margin-left: 5px; background: #fff;height: 20px; line-height: 14px; min-weight:20px; color: #666 }
+.nav-tabs li.active .badge{background: #dc4451; color: #fff; }
+.unify{position: relative; padding: 0 40px; margin: 30px 0;}
+.prev,.next{font-family: "宋体"; position: absolute; color: rgba(255,255,255,.5); font-weight: bold;cursor:pointer;}
+.prev:hover,.next:hover{color: rgba(255,255,255,1)}
+.unify .prev{ left: 0; top: 100px;font-size: 32px;}
+.unify .next{right: 0; top: 100px;font-size: 32px;}
+.unify .item{background: rgba(0,0,0,.1); padding: 20px; height: 260px; position: relative; display: block; line-height: 30px;}
+.unify .item:hover{background: rgba(0,0,0,.2); color: #fff;}
+.unify .item.active{background:#dc4451;}
+.unify .item.active:hover{color: #fff;}
+.unify .item .time{position: absolute; bottom: 15px; left: 15px; right: 15px; padding:5px 0 0 10px; border-top: 1px solid rgba(255,255,255,.3)}
+.unify .col-md-3{padding-left: 15px; padding-right: 10px;}
+
+
+/*即时通讯*/
+.address {margin: 10px 0 30px;}
+.address dl{background: rgba(74,179,232,.3); height: 164px; position: relative; padding:0 30px 0 65px; font-size: 14px;}
+.address dt{position: absolute; width: 35px; left: 0;background: rgba(74,179,232,.4); height: 163px; font-size: 14px; line-height: 18px; padding: 35px 10px 0 10px; text-align: center;}
+.address dd{text-align: center; padding-top: 20px; height: 162px;}
+.address_user{width: 55px; height: 55px; border-radius: 100%; margin-bottom: 3px;}
+.address .prev{left: 45px; top: 65px;font-size: 20px;z-index: 9}
+.address .next{right:10px; top: 50px;font-size: 20px;z-index: 9}
+.address .col-md-3{padding:5px 0; line-height:24px;}
+.address .fa{color: #a0dfff; padding: 0 3px; font-size: 18px;}
+.address .fa:hover{color: #fff; cursor:pointer; }
+.address .row{margin: 0}
+.address li:hover{background:rgba(74,179,232,.4);border-radius: 5px; cursor:default; }
+
+/*日程*/
+.schedule{background: rgba(0,0,0,.1); padding:10px 30px 30px; height: 330px;}
+.schedule .nav-tabs{margin-bottom: 25px;}
+.calendar_timeline h4{font-size: 16px; margin-bottom: 15px; line-height: 16px;}
+.calendar_timeline dl{margin-left: 65px;height:210px;}
+.calendar_timeline dt{margin-left: -65px; float: left; clear: both;height: 38px; font-weight: normal; text-align: right;}
+.calendar_timeline dd{float: left;border-left: 3px solid rgba(255,255,255,.2);height: 38px; position: relative;padding-left: 20px; width: 100% }
+.calendar_timeline dd:last-child{border-left-color: transparent;}
+.calendar_timeline dd a{text-overflow: ellipsis; white-space: nowrap;width: 100%; overflow: hidden; display: block;}
+.calendar_timeline dd:before{content:""; display: block; position:absolute; left:-12px;top: 0; background: #dc4451; border: 3px solid #a0cce7; width: 20px; height: 20px; border-radius: 100%;}
+.calendar img{width: 100%}
+/*年度工作计划*/
+.chart img{width: 100%}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*reset-bootstrap*/
+.page-container{padding: 0 20px;}
+.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11{padding-left: 20px; padding-right: 20px;}
+.nav-tabs{border-bottom: none;}
+.nav-tabs>li{margin-right: 10px;}
+.nav-tabs>li>a{border:0;border-bottom: 3px solid #4ab3e8; font-size: 18px; padding: 10px;}
+.nav-tabs>li>a:hover{border-color:transparent;border-bottom: 3px solid rgba(255,255,255,.8); background: transparent; color: #fff;}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{background: transparent;border: none; border-bottom: 3px solid #dc4451; color: #fff; }

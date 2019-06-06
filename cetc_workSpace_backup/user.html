@@ -20,6 +20,7 @@
     <script src="lib/bootstrap3.4/js/bootstrap.min.js"></script>
     <script src="lib/moment.js"></script>
     <script src="lib/calendar.js"></script>
+    <script src="js/app.js"></script>
     <script>
         $(function() {
             $('a[data-toggle="tab"]').on('shown.bs.tab', function(e) {
@@ -336,24 +337,43 @@
 
             </div>
             <div class="quickpass">
-                <dl class="quick pass">
-                    <dt>快速通道</dt>
-                    <dd>
-                        <i class="fa fa-pencil-alt"></i><br>集团发文
-                    </dd>
-                    <dd>
-                        <i class="fa fa-desktop"></i><br>集团收文
-                    </dd>
-                    <dd>
-                        <i class="fa fa-paper-plane"></i><br>外出登记
-                    </dd>
-                    <dd>
-                        <i class="fa fa-calendar"></i><br>会议室预约
-                    </dd>
-                </dl>
-                <div class="link_page">
-                    <i class="fa fa-caret-left"></i>
-                    <i class="fa fa-caret-right"></i>
+                <div class="quickPassTitle">
+                    <p> 快速通道</p>
+
+                </div>
+                <div class="scrollArea">
+                    <dl class="quick pass">
+
+                        <dd>
+                            <i class="fa fa-pencil-alt"></i><br>集团发文
+                        </dd>
+                        <dd>
+                            <i class="fa fa-desktop"></i><br>集团收文
+                        </dd>
+                        <dd>
+                            <i class="fa fa-paper-plane"></i><br>外出登记
+                        </dd>
+                        <dd>
+                            <i class="fa fa-calendar"></i><br>会议室预约
+                        </dd>
+                        <dd>
+                            <i class="fa fa-paper-plane"></i><br>出登记
+                        </dd>
+                        <dd>
+                            <i class="fa fa-calendar"></i><br>会室预约
+                        </dd>
+                        <dd>
+                            <i class="fa fa-paper-plane"></i><br>外出登
+                        </dd>
+                        <dd>
+                            <i class="fa fa-calendar"></i><br>会议室预
+                        </dd>
+                    </dl>
+                </div>
+
+                <div class="mylink_page">
+                    <i class="fa fa-caret-left" id="prev"></i>
+                    <i class="fa fa-caret-right" id="next"></i>
                 </div>
             </div>
         </div>

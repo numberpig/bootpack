@@ -71,8 +71,23 @@
 }
 
 .quick {
+    display: flex;
+    height: 190px;
+    align-content: flex-start;
+    position: absolute;
+    margin-bottom: 0px;
+    width: 1000px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: column wrap;
+}
+
+.scrollArea {
+    margin-left: 30px;
+    width: 245px;
+    height: 190px;
+    overflow: hidden;
     position: relative;
-    padding-left: 30px;
 }
 
 .quick dt {
@@ -101,6 +116,34 @@
     display: inline-block;
     border: 1px solid #eee;
     margin-top: 10px;
+    position: relative;
+    width: 330px;
+}
+
+.quickPassTitle {
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 32px;
+    height: 100%;
+    background: #eee;
+}
+
+.quickPassTitle p {
+    writing-mode: vertical-rl;
+    margin: 63px auto;
+    letter-spacing: 2px;
+}
+
+.mylink_page {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    font-size: 26px;
+    color: #ccc;
+    width: 50px;
 }
 
 .usefullLink {
@@ -160,6 +203,11 @@
 }
 
 .link_page i:hover {
+    color: #666;
+    cursor: pointer;
+}
+
+.mylink_page i:hover {
     color: #666;
     cursor: pointer;
 }
