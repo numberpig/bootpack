@@ -67,7 +67,6 @@
 }
 
 .usercontent {
-    height: 1000px;
     background: #356d9d;
     margin: 0px 10px;
     border-radius: 5px;
@@ -79,7 +78,8 @@
 }
 
 .leftarea {
-    border-right: 1px solid;
+    font-size: 13px;
+    padding: 0px;
 }
 
 .servicemap dl {
@@ -90,12 +90,517 @@
 }
 
 .servicemap a {
-    color: #7b7d86;
+    font-size: 14px;
     display: block;
     line-height: 28px;
+}
+
+.servicemap {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.hotline:before {
+    height: 158px;
+    width: 1px;
+    background-color: #425C91;
+    background-image: linear-gradient(360deg, #425C91 15%, #479CBE 50%, #425C91 80%);
+    background-image: -webkit-linear-gradient(360deg, #425C91 15%, #479CBE 50%, #425C91 80%);
+    background-image: -moz-linear-gradient(360deg, #425C91 15%, #479CBE 50%, #425C91 80%);
+    background-image: -o-linear-gradient(360deg, #425C91 15%, #479CBE 50%, #425C91 80%);
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: -10px;
+    top: 10px;
 }
 
 .header2 {
     height: 80px;
     background: #093066;
+}
+
+.normaluser .date {
+    color: #49d2ef;
+    margin: 5px 10px;
+    float: left;
+    line-height: 20px;
+    position: relative;
+    z-index: 3;
+}
+
+
+/* extend */
+
+@font-face {
+    font-family: 'icon';
+    src: url('fonts/icon.eot?rmbu6n');
+    src: url('fonts/icon.eot?rmbu6n#iefix') format('embedded-opentype'), url('fonts/icon.ttf?rmbu6n') format('truetype'), url('fonts/icon.woff?rmbu6n') format('woff'), url('fonts/icon.svg?rmbu6n#icon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="extend-"],
+[class*=" extend-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.extend-arrow_down:before {
+    content: "\e900";
+}
+
+.extend-arrow_up:before {
+    content: "\e901";
+}
+
+.extend-computer:before {
+    content: "\e902";
+}
+
+.extend-cup:before {
+    content: "\e903";
+}
+
+.extend-exit:before {
+    content: "\e904";
+}
+
+.extend-home:before {
+    content: "\e905";
+}
+
+.extend-knowledge:before {
+    content: "\e906";
+}
+
+.extend-server:before {
+    content: "\e907";
+}
+
+.extend-skin:before {
+    content: "\e908";
+}
+
+
+/*公司领导*/
+
+.normaluser .header {
+    background: -webkit-linear-gradient(left, #124087, transparent, transparent, #124087);
+    /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(left, #124087, transparent, transparent, #124087);
+    /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(left, #124087, transparent, transparent, #124087);
+    /* Firefox 3.6 - 15 */
+    background: linear-gradient(left, #124087, transparent, transparent, #124087);
+}
+
+.normaluser .header .user_info {
+    line-height: 40px;
+    font-size: 18px;
+}
+
+.normaluser .header .user_info li {
+    float: left;
+    margin-left: 20px;
+}
+
+.normaluser .header .user_info i {
+    font-size: 32px;
+    margin-top: 6px;
+    display: inline-block;
+}
+
+.normaluser .header .user_info i.extend-skin {
+    color: #00ff00;
+    margin-left: 20px;
+}
+
+.normaluser .header .user_info i.extend-exit {
+    color: #00c9ff;
+}
+
+.normaluser .header .head_portrait {
+    position: static;
+    border: none;
+    margin-right: 5px;
+    height: 50px;
+}
+
+.normaluser .calendarContentTbody td {
+    vertical-align: top;
+}
+
+.normaluser .calendarContentTbody .item {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    line-height: 36px;
+    position: relative;
+    padding-left: 10px;
+    cursor: pointer
+}
+
+.subcontent {
+    background: #496f99;
+}
+
+.subcontent span {
+    display: block;
+}
+
+.subcontent span {}
+
+.contacts .active {
+    background: #0060C1;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    /* backface-visibility:hidden; */
+}
+
+.contacts .active .user_operation {
+    opacity: 1;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+}
+
+.contacts {
+    width: 150px;
+    position: absolute;
+    top: 7px;
+    right: 11px;
+}
+
+.contacts .contacts_t {
+    margin-bottom: 10px;
+}
+
+.contacts .users .users_t,
+.contacts .users .users_b {
+    overflow: auto;
+}
+
+.contacts .contacts_name {
+    height: 40px;
+    width: 100%;
+    margin-bottom: 3px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+    position: relative;
+    border: 1px solid #49d2ef;
+    box-shadow: inset 0 0 10px 6px rgba(3, 70, 166);
+    border-radius: 6px;
+    background-size: cover;
+}
+
+.input-group.all_sear {
+    width: 142px;
+    top: 12px;
+    left: 10px;
+}
+
+.all_sear .form-control {
+    background: transparent;
+    border-color: #0064ac;
+    border-right: none;
+    color: #0081c9;
+}
+
+.all_sear .btn-default,
+.all_sear .btn-default:focus {
+    background: transparent;
+    border-color: #0064ac;
+    border-left: none;
+    color: #0081c9;
+}
+
+.contacts .users {
+    width: 100%;
+    border: 1px solid #24508E;
+    border-radius: 5px;
+}
+
+.contacts .users_t {
+    height: 400px;
+}
+
+.contacts .users_b {
+    max-height: 340px;
+}
+
+.contacts .userlist {
+    width: 100%;
+    overflow: auto;
+}
+
+.contacts .list_t {
+    height: 355px;
+}
+
+.contacts .list_b {
+    max-height: 290px;
+}
+
+.contacts .lists {
+    padding: 10px 0 10px 10px;
+    cursor: pointer;
+}
+
+.contacts .user_box {
+    width: 100%;
+}
+
+.contacts .user_box .user_head {
+    width: 40px;
+    float: left;
+}
+
+.contacts .user_box .user_info {
+    float: left;
+    width: 78px;
+    padding-left: 5px;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #FFFFFF;
+    font-size: 12px;
+}
+
+.contacts .user_box .user_info p {
+    margin: 0;
+    line-height: 22px;
+}
+
+.contacts .user_box .user_info .user_department {
+    color: #0095E3;
+}
+
+.contacts .user_operation {
+    color: #fff;
+    text-align: center;
+    display: none;
+    opacity: 0;
+}
+
+.contacts .user_operation i {
+    font-size: 18px;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.contacts .user_arrow {
+    margin: 0 auto;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+    color: #00c9ff;
+    font-size: 20px;
+}
+
+.quick dt {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30px;
+    font-size: 14px;
+    height: 190px;
+    background: #999;
+    padding: 50px 0 0 9px;
+    color: #fff
+}
+
+.quickpass {
+    margin-top: 20px;
+}
+
+.quickpass p {
+    background: rgba(255, 255, 255, 0.15);
+    line-height: 30px;
+    padding: 3px;
+}
+
+.leftarea li i {
+    margin-right: 5px;
+}
+
+.quick dd {
+    width: 50px;
+    height: 50px;
+    float: left;
+    text-align: center;
+    margin: 25px 2px 2px 2px;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+.quick dd i {
+    font-size: 26px;
+}
+
+.leftarea li {
+    line-height: 30px;
+    text-align: center;
+    padding-bottom: 1px;
+    background: linear-gradient( to left, rgba(255, 255, 255, .15) 0%, rgb(137, 220, 228) 50%, rgba(239, 231, 231, 0.15) 100%) left bottom rgba(0, 0, 0, .0001) no-repeat;
+    background-size: 100% 1px;
+}
+
+.leftarea li.arrow_box {
+    line-height: 30px;
+    text-align: center;
+    padding-bottom: 1px;
+    background: linear-gradient( to left, rgba(255, 255, 255, .15) 0%, rgb(137, 220, 228) 50%, #f5f5f5 100%) left bottom rgba(255, 255, 255, 0.15) no-repeat;
+    background-size: 100% 0px;
+    border-radius: 4px;
+}
+
+.arrow_box {
+    position: relative;
+    background: #4580c4;
+    margin: 9px 5px 5px 5px;
+}
+
+.arrow_box:after {
+    bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(69, 128, 196, 0);
+    border-bottom-color: rgba(255, 255, 255, .15);
+    border-width: 8px;
+    margin-left: -27px;
+}
+
+.addnotes {
+    float: right;
+    margin-right: 10px;
+}
+
+.notes ul li {
+    line-height: 40px;
+}
+
+.notes {
+    font-size: 14px;
+    height: 400px;
+    padding-left: 1px;
+    background: linear-gradient( to bottom, rgba(255, 255, 255, 0) 0%, rgb(137, 220, 228) 50%, rgba(255, 255, 255, 0) 100%) left bottom rgba(255, 255, 255, 0) no-repeat;
+    background-size: 1px 100%;
+}
+
+.notes .title {
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.notes .addnotes {
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.notes ul {
+    margin-top: 35px;
+}
+
+.meeting {
+    padding-left: 1px;
+    background: linear-gradient( to bottom, rgba(255, 255, 255, 0) 0%, rgb(137, 220, 228) 50%, rgba(255, 255, 255, .15) 100%) left bottom rgba(255, 255, 255, 0) no-repeat;
+    background-size: 1px 100%;
+    padding-left: 10px;
+}
+
+.cardnotes.red {
+    background: #c74a4a;
+    margin: 1px 5px;
+    line-height: 41px;
+    background: linear-gradient(-135deg, transparent 10px, #c74a4a 0);
+}
+
+.cardnotes {
+    margin: 6px 10px;
+    line-height: 41px;
+}
+
+.xw {
+    height: 200px;
+}
+
+.blue {
+    background: #0d4799;
+    background: linear-gradient(-135deg, transparent 10px, #0d4799 0);
+}
+
+.cardnotes.yellow {
+    background: #fc9809;
+    background: linear-gradient(-135deg, transparent 10px, #fc9809 0);
+}
+
+.cardnotes.green {
+    background: #29cc0e;
+    background: linear-gradient(-135deg, transparent 10px, #29cc0e 0);
+}
+
+.cardnotes i {
+    float: right;
+    position: relative;
+    top: 12px;
+    right: 14px;
+}
+
+.row.ll {
+    text-align: center;
+    padding-top: 1px;
+    background: linear-gradient( to left, rgba(255, 255, 255, .15) 0%, rgb(137, 220, 228) 50%, rgba(239, 231, 231, 0.15) 100%) left top rgba(0, 0, 0, .0001) no-repeat;
+    background-size: 100% 1px;
+}
+
+.xw {
+    float: left;
+    margin-right: 4px;
+}
+
+.listBody {
+    text-align: left;
+    width: 98%;
+}
+
+.studyarea {
+    margin: 0;
+    padding: 0;
+}
+
+.studyarea .bodyItem {
+    background: transparent;
+}
+
+.studyarea .bodyItem a:before {
+    content: ">";
+    background: transparent;
+    position: absolute;
+    left: 5px;
+    right: 11px;
+    top: 2px;
 }

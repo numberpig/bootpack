@@ -9,7 +9,6 @@
     <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link href="lib/bootstrap3.4/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/fa5.8/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="css/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css">
@@ -25,110 +24,226 @@
 </head>
 
 <body class="normaluser">
+    <!-- header -->
     <div class="header">
-
         <div class="leftheader">
             <div class="lefttop">
-
+                <div class="date">2019-06-06 <br>星期四 09:30:21</div>
             </div>
             <div class="leftbottom">
-
-                <div class="input-icon ">
+                <!-- <div class="input-icon ">
                     <i class="icon-magnifier searchicon"></i>
                     <input type="text" class="search" placeholder="全文搜索">
+                </div> -->
+                <div class="input-group all_sear">
+                    <input type="text" class="form-control">
+                    <div class="input-group-btn">
+                        <button type="button" class="btn btn-default"><span class="fa fa-search"></span></button>
+                    </div>
                 </div>
-
-
             </div>
         </div>
         <div class="middleheader">
             <img src="img/logo.png" class="logo">
         </div>
         <div class="rightheader">
-
             <div class="righttop">
-                <span class="system_name">集团办公门户</span>
-
-                <div class="pull-right text-right">
-                    黎志刚 您好！<a href="">注销</a>
-
-                </div>
+                <ul class="user_info">
+                    <li>
+                        <img src="img/placeholder/head.png" alt="" class="head_portrait"> 集团领导
+                    </li>
+                    <li>
+                        <i class="extend-skin"></i>
+                    </li>
+                    <li>
+                        <i class="extend-exit"></i>
+                    </li>
+                </ul>
             </div>
             <div class="rightbottom" style="text-align: right;">
-                <div class="input-icon ">
-
+                <!-- <div class="input-icon ">
                     <input type="text" class="search" placeholder="常用联系人">
+                </div> -->
+                <div class="contacts">
+                    <div class="contacts_t">
+                        <div class="top_contacts contacts_name">
+                            常用联系人
+                        </div>
+                        <div class="users users_t">
+                            <div class="userlist list_t">
+
+                                <div class="lists" style="display: none">
+                                    <div class="user_box clearfix">
+                                        <div class="user_head">
+                                            <img src="img/placeholder/head.png" width="100%">
+                                        </div>
+                                        <div class="user_info">
+                                            <p user_name="">杨可行</p>
+                                            <span class="user_department">办公室主任</span>
+                                        </div>
+                                    </div>
+                                    <div class="user_operation">
+                                        <i class="fa fa-envelope-square"></i>
+                                        <i class="fa fa-comments"></i>
+                                    </div>
+                                </div>
+                                <div class="lists">
+                                    <div class="user_box clearfix">
+                                        <div class="user_head">
+                                            <img src="img/placeholder/head.png" width="100%">
+                                        </div>
+                                        <div class="user_info">
+                                            <p user_name="">杨可行</p>
+                                            <span class="user_department">办公室主任</span>
+                                        </div>
+                                    </div>
+                                    <div class="user_operation">
+                                        <i class="fa fa-envelope-square"></i>
+                                        <i class="fa fa-comments"></i>
+                                    </div>
+                                </div>
+                                <div class="lists">
+                                    <div class="user_box clearfix">
+                                        <div class="user_head">
+                                            <img src="img/placeholder/head.png" width="100%">
+                                        </div>
+                                        <div class="user_info">
+                                            <p user_name="">杨可行</p>
+                                            <span class="user_department">办公室主任</span>
+                                        </div>
+                                    </div>
+                                    <div class="user_operation">
+                                        <i class="fa fa-envelope-square"></i>
+                                        <i class="fa fa-comments"></i>
+                                    </div>
+                                </div>
+                                <div class="lists">
+                                    <div class="user_box clearfix">
+                                        <div class="user_head">
+                                            <img src="img/placeholder/head.png" width="100%">
+                                        </div>
+                                        <div class="user_info">
+                                            <p user_name="">杨可行</p>
+                                            <span class="user_department">办公室主任</span>
+                                        </div>
+                                    </div>
+                                    <div class="user_operation">
+                                        <i class="fa fa-envelope-square"></i>
+                                        <i class="fa fa-comments"></i>
+                                    </div>
+                                </div>
+                                <div class="lists">
+                                    <div class="user_box clearfix">
+                                        <div class="user_head">
+                                            <img src="img/placeholder/head.png" width="100%">
+                                        </div>
+                                        <div class="user_info">
+                                            <p user_name="">杨可行</p>
+                                            <span class="user_department">办公室主任</span>
+                                        </div>
+                                    </div>
+                                    <div class="user_operation">
+                                        <i class="fa fa-envelope-square"></i>
+                                        <i class="fa fa-comments"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="user_arrow">
+                                <i class="extend-arrow_down"></i>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-
             </div>
-
         </div>
     </div>
+    <!-- header end -->
     <div class="usercontent container-fluid">
         <div class="row">
             <div class="col-md-1 leftarea">
                 <div class="nav">
                     <ul>
-                        <li>首页</li>
-                        <li class="active">办事大厅</li>
-                        <li>一网通办</li>
-                        <li>新闻中心</li>
-                        <li>领导驾驶</li>
-                        <li>党务门户</li>
-                        <li>廉洁之风</li>
-                        <li>下属单位</li>
+                        <li><i class="fa fa-clipboard-list"></i>公文系统</li>
+                        <li class="subcontent arrow_box">
+                            <span>发文管理</span>
+                            <span>收文管理</span>
+                            <span>请示报告</span>
+                            <span>会议管理</span>
+                        </li>
+                        <li><i class="fa fa-chalkboard-teacher"></i>一网通办</li>
+                        <li><i class="fa fa-file-contract"></i>合同管理</li>
+                        <li><i class="fa fa-chart-line"></i>人事管理</li>
+                        <li><i class="fa fa-desktop"></i>综合办公</li>
+                        <li><i class="fa fa-mug-hot"></i>温馨生活</li>
+                        <li><i class="fa fa-book-open"></i>知识中心</li>
                     </ul>
                 </div>
 
                 <div class="quickpass">
-                    <ul>
+                    <p>快速通道</p>
+                    <dl class="quick pass">
 
-                        <li>一网通办</li>
-                        <li>新闻中心</li>
-                        <li>领导驾驶</li>
-                        <li>党务门户</li>
-                        <li>廉洁之风</li>
-                        <li>下属单位</li>
-                    </ul>
+                        <dd>
+                            <i class="fa fa-car-alt" style="color: #73D0EA;"></i><br>用车
+                        </dd>
+                        <dd>
+                            <i class="fa fa-bed" style="color: #4CFC5D"></i><br>住宿
+                        </dd>
+                        <dd>
+                            <i class="fa fa-utensils" style="color: #FFC043"></i><br>订餐
+                        </dd>
+                        <dd>
+                            <i class="fa fa-hotel" style="color:#FF5CE0"></i><br>协议酒店
+                        </dd>
+                        <dd>
+                            <i class="fab fa-internet-explorer" style="color: #33A3FF"></i><br>电科商城
+                        </dd>
+                        <dd>
+                            <i class="fas fa-mug-hot" style="color:#FFC043 "></i><br>温馨生活
+                        </dd>
+
+                    </dl>
                 </div>
 
 
             </div>
-            <div class="col-md-11">
-                <div class="row">
-                    <div class="col-md-10">
+            <div class="col-md-11" style="border-left: 1px solid #668ba5;;">
+                <div class="row ff">
+                    <div class="col-md-9">
                         <!-- 待办 -->
                         <ul class="nav nav-tabs" role="tablist">
-                            <li class="active"><a href="#waitDo" data-toggle="tab">我的待办<span class="badge">3</span></a></li>
-                            <li><a href="#donw" data-toggle="tab">我的已办<span class="badge">3</span></a></li>
-                            <li><a href="#witRead" data-toggle="tab">我的待阅<span class="badge">3</span></a></li>
-                            <li><a href="#care" data-toggle="tab">我的关注<span class="badge">3</span></a></li>
-                            <li><a href="#mail" data-toggle="tab">我的邮件<span class="badge">3</span></a></li>
+                            <li class="active"><a href="#waitDo" data-toggle="tab">待办<span class="badge">3</span></a></li>
+                            <li><a href="#witRead" data-toggle="tab">待阅<span class="badge">3</span></a></li>
+                            <li><a href="#donw" data-toggle="tab">已办 </a></li>
+
+                            <li><a href="#care" data-toggle="tab">关注 </a></li>
+                            <li><a href="#mail" data-toggle="tab">邮件 </a></li>
                         </ul>
                         <div class="tab-content unify">
                             <div class="tab-pane active" id="waitDo">
                                 <div class="prev">&lt;</div>
                                 <ul class="row">
                                     <li class="col-md-3 col-xs-3">
-                                        <a href="#" class="item active">
+                                        <a href="#" class="item redcorner">
                                                     关于中电科西北集团有限公司通过协议转让方式购置东强公司资产的请示
                                                     <span class="time">2019-06-04</span>
                                                 </a>
                                     </li>
                                     <li class="col-md-3 col-xs-3">
-                                        <a href="#" class="item">
+                                        <a href="#" class="item redcorner">
                                                     关于中电科西北集团有限公司通过协议转让方式购置东强公司资产的请示
                                                     <span class="time">2019-06-04</span>
                                                 </a>
                                     </li>
                                     <li class="col-md-3 col-xs-3">
-                                        <a href="#" class="item">
+                                        <a href="#" class="item bluecorner">
                                                     关于中电科西北集团有限公司通过协议转让方式购置东强公司资产的请示
                                                     <span class="time">2019-06-04</span>
                                                 </a>
                                     </li>
                                     <li class="col-md-3 col-xs-3">
-                                        <a href="#" class="item">
+                                        <a href="#" class="item bluecorner">
                                                     关于中电科西北集团有限公司通过协议转让方式购置东强公司资产的请示
                                                     <span class="time">2019-06-04</span>
                                                 </a>
@@ -142,42 +257,76 @@
                             <div class="tab-pane" id="mail">.5..</div>
                         </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-3" style="margin: 0;padding: 0;">
 
                         <div class="notes">
-                            <ul>
+                            <p style="text-align: right"> <i class="fa fa-cog config"></i></p>
 
-                                <li>一网通办</li>
-                                <li>新闻中心</li>
-                                <li>领导驾驶</li>
+                            <p><span class='title'>工作便签 </span> <span class='addnotes'>添加便签</span></p>
+                            <ul>
+                                <li class="cardnotes blue">一网通办汇报演示<i class="fa fa-trash-alt config"></i></li>
+                                <li class="cardnotes green">看望孤寡老人<i class="fa fa-trash-alt config"></i></li>
+                                <li class="cardnotes yellow">公司重点工作沟通会<i class="fa fa-trash-alt config"></i></li>
+
 
                             </ul>
                         </div>
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col-md-10">
+                <div class="row mm">
+                    <div class="col-md-9">
                         <!-- 待办 -->
                         <ul class="nav nav-tabs" role="tablist">
-                            <li class="active"><a href="#personschedule" data-toggle="tab">个人日程<span class="badge">3</span></a></li>
-                            <li><a href="#leaderschedule" data-toggle="tab">主管领导<span class="badge">3</span></a></li>
+                            <li class="active"><a href="#personschedule" data-toggle="tab">个人日程 </a></li>
+                            <li><a href="#leaderschedule" data-toggle="tab">主管领导 </a></li>
 
                         </ul>
-                        <div class="tab-content unify">
+                        <div class="tab-content  ">
                             <div class="tab-pane active" id="personschedule">
-                                个人日程
+                                <div class="rightEvent">
+                                    <p>主管领导：徐璐 </p>
+
+
+                                    <div class="dcCalendarContent" id="dcCalendarContent">
+                                        <span class="calTableWrapper">
+                                            <table class="calendarTableContent">
+                                                <thead class="rightTh"><tr><th>2019-6-2</th><th>2019-6-3</th><th>2019-6-4</th><th>2019-6-5</th><th>2019-6-6</th><th>2019-6-7</th><th>2019-6-8</th></tr></thead>
+                                                <tbody class="calendarContentTbody">
+                                                    <tr class="mornning">
+                                                    <td>
+                                             <span class="item">8:00 <span>关于中电科西北集团有限公司通过协议转让方式购置东强公司资产的请示</span>></span>
+                                        <span class="item">08:00 关于中电科西北集团有限公司通过协议转让方式购置东强公司资产的请示</span>
+                                        <span class="item">08:00 关于中电科西北集团有限公司通过协议转让方式购置东强公司资产的请示</span>
+                                        <span class="item">08:00 关于中电科西北集团有限公司通过协议转让方式购置东强公司资产的请示</span>
+                                        </td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                        <td>4</td>
+                                        <td>5</td>
+                                        <td>6</td>
+                                        <td>7</td>
+                                        </tr>
+                                        </tbody>
+                                        </table>
+                                        </span>
+
+                                    </div>
+                                </div>
+
+
                             </div>
+
                             <div class="tab-pane" id="leaderschedule">
                                 领导日程
                             </div>
 
-
                         </div>
+
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-3" style="padding: 0;">
                         <div class="meeting">
-                            <div class="col-md-8 col-xs-8 calendar_timeline">
+                            <div class="calendar_timeline">
                                 <h4>会议通知</h4>
                                 <dl>
                                     <dt>09:00</dt>
@@ -209,17 +358,16 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
 
+
+                </div>
+                <div class="row ll">
+
+                    <div class="col-md-9" style="margin: 0;padding: 0;">
+                        <div class="listTitle">今日电科 </div>
                         <img src="img/example.png" class="xw">
-
-
-                    </div>
-                    <div class="col-md-6">
                         <div class="list list8">
-                            <div class="listTitle">学习园地<a href="#" class="more">更多<span>&gt;</span></a></div>
+
                             <ul class="listBody">
                                 <li class="bodyItem">
                                     <a class="" href="#">中央第九巡视组巡视中国电子科技集团有限中央第九巡视组巡视中国电子科技集团有限</a>
@@ -237,13 +385,20 @@
                                     <a class="" href="#">中央第九巡视组巡视中国电子科技集团有限</a>
                                     <span class="time">2019-06-04</span>
                                 </li>
-
+                                <li class="bodyItem">
+                                    <a class="" href="#">中央第九巡视组巡视中国电子科技集团有限</a>
+                                    <span class="time">2019-06-04</span>
+                                </li>
+                                <li class="bodyItem">
+                                    <a class="" href="#">中央第九巡视组巡视中国电子科技集团有限</a>
+                                    <span class="time">2019-06-04</span>
+                                </li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-3 studyarea" style="padding: 0;margin:0;">
                         <div class="list list8">
-                            <div class="listTitle">学习园地<a href="#" class="more">更多<span>&gt;</span></a></div>
+                            <div class="listTitle">学习园地 </div>
                             <ul class="listBody">
                                 <li class="bodyItem">
                                     <a class="" href="#">中央第九巡视组巡视中国电子科技集团有限中央第九巡视组巡视中国电子科技集团有限</a>
@@ -261,18 +416,25 @@
                                     <a class="" href="#">中央第九巡视组巡视中国电子科技集团有限</a>
                                     <span class="time">2019-06-04</span>
                                 </li>
-
+                                <li class="bodyItem">
+                                    <a class="" href="#">中央第九巡视组巡视中国电子科技集团有限</a>
+                                    <span class="time">2019-06-04</span>
+                                </li>
+                                <li class="bodyItem">
+                                    <a class="" href="#">中央第九巡视组巡视中国电子科技集团有限</a>
+                                    <span class="time">2019-06-04</span>
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-
             </div>
+
         </div>
 
-    </div>
 
-    <!-- 导航 -->
+    </div>
+    <!-- footer导航 -->
     <div class="nav workspace">
         <div class="servicemap">
 
@@ -283,7 +445,7 @@
                     <a href="">离/退休管理</a>
                     <a href="">出国/境事项审批</a>
                     <a href="">教育培训管理</a>
-                    <a href="" class="more">更多</a>
+
                 </dd>
 
 
@@ -295,7 +457,7 @@
                     <a href="">决算管理</a>
                     <a href="">资金管理</a>
                     <a href="">资产管理</a>
-                    <a href="" class="more">更多</a>
+
                 </dd>
 
             </dl>
@@ -306,7 +468,7 @@
                     <a href="">法务服务</a>
                     <a href="">保密服务</a>
                     <a href="">外事接待</a>
-                    <a href="" class="more">更多</a>
+
                 </dd>
 
             </dl>
@@ -326,8 +488,6 @@
             </dl>
         </div>
     </div>
-
-
 
 </body>
 

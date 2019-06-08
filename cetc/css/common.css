@@ -92,6 +92,8 @@ li {
 
 .nav-tabs>li {
     margin-right: 10px;
+    min-width: 81px;
+    text-align: center;
 }
 
 .nav-tabs>li>a {
@@ -138,6 +140,9 @@ li {
     position: relative;
     padding: 0 40px;
     margin: 30px 0;
+    /* padding-right: 1px;
+    background: linear-gradient( to bottom, rgba(255, 255, 255, .15) 0%, rgb(137, 220, 228) 50%, #f5f5f5 100%) left bottom rgba(255, 255, 255, 0.15) no-repeat;
+    background-size: 1px 100%; */
 }
 
 .prev,
@@ -173,6 +178,14 @@ li {
     position: relative;
     display: block;
     line-height: 30px;
+}
+
+.unify .item.redcorner {
+    background: linear-gradient(-135deg, red 30px, rgba(0, 0, 0, .1) 0);
+}
+
+.unify .item.bluecorner {
+    background: linear-gradient(-135deg, blue 30px, rgba(0, 0, 0, .1) 0);
 }
 
 .unify .item:hover {
@@ -222,26 +235,26 @@ li {
 }
 
 .calendar_timeline dl {
-    margin-left: 65px;
     height: 210px;
 }
 
 .calendar_timeline dt {
-    margin-left: -65px;
+    margin-left: 2px;
     float: left;
     clear: both;
-    height: 38px;
     font-weight: normal;
     text-align: right;
+    background: #1c4d77;
 }
 
 .calendar_timeline dd {
     float: left;
     border-left: 3px solid rgba(255, 255, 255, .2);
-    height: 38px;
+    height: 16px;
     position: relative;
-    padding-left: 20px;
-    width: 100%
+    padding-left: 26px;
+    margin-left: 17px;
+    width: 100%;
 }
 
 .calendar_timeline dd:last-child {
@@ -254,9 +267,13 @@ li {
     width: 100%;
     overflow: hidden;
     display: block;
+    position: relative;
+    top: -22px;
+    padding-left: 5px;
 }
 
-.calendar_timeline dd:before {
+
+/* .calendar_timeline dd:before {
     content: "";
     display: block;
     position: absolute;
@@ -267,7 +284,7 @@ li {
     width: 20px;
     height: 20px;
     border-radius: 100%;
-}
+} */
 
 .calendar img {
     width: 100%
@@ -282,20 +299,39 @@ li {
 
 .listTitle {
     padding-left: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 4px;
     font-size: 18px;
     position: relative;
     line-height: 40px;
+    text-align: left;
 }
 
-.listTitle:before {
+.list.list8 {
+    height: 220px;
+}
+
+.bodyItem {
+    background: #2c4975;
+    margin-top: 4px;
+    border-radius: 5px;
+    padding: 4px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-left: 14px;
+    position: relative;
+}
+
+.bodyItem a:before {
     content: "";
     width: 4px;
-    height: 25px;
-    background: rgba(255, 255, 255, .3);
+    height: 14px;
+    background: rgba(11, 170, 241, 0.89);
     position: absolute;
     left: 5px;
+    right: 11px;
     top: 8px;
+    border-radius: 5px;
 }
 
 .new_primary {
@@ -323,4 +359,492 @@ li {
     display: -webkit-box;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
+}
+
+.dc_calendar {
+    width: 25%;
+    height: 290px;
+    margin: 2px 0px 0px 0;
+    color: #ccc;
+    display: inline-block;
+}
+
+.rightEvent {
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 12px;
+}
+
+.mcBtn {
+    cursor: pointer;
+}
+
+.calContentHeader {
+    height: 38px;
+    display: table;
+}
+
+.calendarContentBtn {
+    margin-top: 15px;
+    font-size: 16px;
+    color: slategrey;
+}
+
+.calendarTableContent {
+    border: 1px solid #2f588b;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.dcCalendarCValues {
+    margin: 0px 30px;
+    color: #666;
+    font-style: normal;
+}
+
+.calendarTableContent th {
+    text-align: center;
+    font-weight: 400;
+}
+
+.rightTh tr {
+    background: #2c4975;
+}
+
+.calContentHeader {
+    text-align: center;
+    width: 100%;
+}
+
+.calendarTableContent .mornning,
+.calendarTableContent .afternoon {
+    height: 108px;
+    border: 1px solid #2f588b;
+    text-align: center;
+}
+
+.calendarTableContent .mornning td,
+.calendarTableContent .afternoon td {
+    border: 1px solid #2f588b;
+}
+
+.hrtr {
+    height: 5px;
+}
+
+.hasEvent {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #da1616;
+    border-radius: 4px;
+    right: 1px;
+    top: 5px;
+}
+
+html,
+body,
+div,
+ol,
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+table,
+tr,
+td,
+dt,
+dd,
+span,
+img {
+    margin: 0;
+    padding: 0
+}
+
+ul,
+li {
+    list-style: none
+}
+
+a {
+    text-decoration: none
+}
+
+.dc_left {
+    float: left
+}
+
+.dc_right {
+    float: right
+}
+
+.dc_pointer {
+    cursor: pointer
+}
+
+.dc_clear {
+    content: "";
+    display: block;
+    clear: both
+}
+
+.dc_mar_bottom {
+    margin-bottom: 20px
+}
+
+.dc_p_center {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto
+}
+
+.dc_c_red {
+    color: #f00
+}
+
+.dc_c_aaa {
+    color: #aaa
+}
+
+.dcCalendar {
+    width: 100%;
+    height: 100%;
+    min-height: 230px;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+    box-shadow: -2px 2px 10px #fff;
+    -webkit-box-shadow: -2px 2px 10px #fff;
+    -moz-box-shadow: -2px 2px 10px #fff;
+    -o-box-shadow: -2px 2px 10px #fff
+}
+
+.dcCalendar .calendarBtn {
+    width: 100%;
+    height: 20%
+}
+
+.dcCalendar .calendarBtn .dcCalendarValues {
+    width: 50%;
+    height: 3em;
+    box-shadow: -2px 2px 10px #fff;
+    -webkit-box-shadow: -2px 2px 10px #fff;
+    -moz-box-shadow: -2px 2px 10px #fff;
+    -o-box-shadow: -2px 2px 10px #fff;
+    float: left;
+    font-size: 1em;
+    border-radius: 1.5em 1.5em 1.5em 1.5em;
+    -webkit-border-radius: 1.5em 1.5em 1.5em 1.5em;
+    -moz-border-radius: 1.5em 1.5em 1.5em 1.5em;
+    text-align: center;
+    line-height: 3em
+}
+
+.dcCalendar .calendarBtn .mBtn,
+.dcCalendar .calendarBtn .yBtn {
+    text-align: center;
+    float: left;
+    border-radius: 50% 50% 50% 50%;
+    -webkit-border-radius: 50% 50% 50% 50%;
+    -moz-border-radius: 50% 50% 50% 50%;
+    font-size: 1em;
+    box-shadow: -1px 1px 2px #fff;
+    -webkit-box-shadow: -1px 1px 2px #fff;
+    -moz-box-shadow: -1px 1px 2px #fff;
+    -o-box-shadow: -1px 1px 2px #fff;
+    cursor: pointer;
+    margin: 0 .5%
+}
+
+.dcCalendar .calendarBtn .yBtn {
+    width: 13%;
+    height: 3em;
+    line-height: 3em
+}
+
+.dcCalendar .calendarBtn .mBtn {
+    width: 10%;
+    height: 2em;
+    line-height: 2em;
+    margin-top: .5em
+}
+
+.dcCalendar .calendarTable {
+    width: 100%;
+    height: 75%;
+    margin-top: 5%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center
+}
+
+.dcCalendar .calendarTable th {
+    text-align: center
+}
+
+.dcCalendar .calendarTable td {
+    cursor: pointer;
+    transition: .1s
+}
+
+.dcCalendar .dcDateDetail {
+    display: none;
+    width: 150px;
+    height: 80px;
+    font: 1em "Times New Roman";
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9)
+}
+
+.calendarTbody tr {
+    border-top: 1px solid;
+}
+
+.calendarTbody td {
+    color: #5d5b5b;
+}
+
+.calendarTable thead {
+    color: #5e5c5c;
+    /* background-image: linear-gradient(180deg, #F7E365 5%, #F5F0CD 23%, #ffffff 100%); */
+    background-image: linear-gradient(180deg, #dae7f5 5%, rgb(230, 231, 240) 23%, #ffffff 100%);
+}
+
+
+/* .calendarTable thead {
+      color: #e6e0e0;
+    background-color: #607EF7;
+    background-image: linear-gradient(360deg, #138DDC 0%, #747AE4 100%); 
+    background-color: #dae7f5;
+    color: #5b5b5b;
+} */
+
+.dcCalendarAddLunar {
+    width: 100%;
+    height: 288px;
+    overflow: hidden;
+    min-height: 230px;
+    padding: 0 0;
+    box-sizing: border-box;
+    position: relative;
+    box-shadow: -2px 2px 10px #fff;
+    -webkit-box-shadow: -2px 2px 10px #fff;
+    -moz-box-shadow: -2px 2px 10px #fff;
+    -o-box-shadow: -2px 2px 10px #fff;
+    border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px
+}
+
+.dcCalendarAddLunar .calendarBtn {
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box
+}
+
+.dcCalendarAddLunar .calendarBtn .dcCalendarValues {
+    width: 50%;
+    height: 20px;
+    float: left;
+    font-size: 1em;
+    text-align: center;
+    line-height: 42px;
+    color: #5d5b5b;
+}
+
+.dcCalendarAddLunar .calendarBtn .mBtn,
+.dcCalendarAddLunar .calendarBtn .yBtn {
+    text-align: center;
+    float: left;
+    border-radius: 50% 50% 50% 50%;
+    -webkit-border-radius: 50% 50% 50% 50%;
+    -moz-border-radius: 50% 50% 50% 50%;
+    font-size: 1em;
+    box-shadow: -1px 1px 2px #fff;
+    -webkit-box-shadow: -1px 1px 2px #fff;
+    -moz-box-shadow: -1px 1px 2px #fff;
+    -o-box-shadow: -1px 1px 2px #fff;
+    cursor: pointer;
+    margin: 0 6%
+}
+
+.calendarContentTbody td.currentSelect {
+    background-color: #fdf8e9;
+}
+
+.dcCalendarAddLunar .calendarBtn .yBtn {
+    width: 13%;
+    height: 3em;
+    line-height: 3em
+}
+
+.dcCalendarAddLunar .calendarBtn .mBtn {
+    width: 12%;
+    height: 2em;
+    line-height: 2em;
+    margin-top: .5em
+}
+
+.dcCalendarAddLunar .calendarBtn:after {
+    content: "";
+    display: block;
+    clear: both
+}
+
+.dcCalendarAddLunar .calendarTable {
+    width: 100%;
+    margin-top: 0px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid #eee;
+}
+
+.dcCalendarAddLunar .calendarTable th {
+    text-align: center
+}
+
+.dcCalendarAddLunar .calendarTable td {
+    cursor: pointer;
+    transition: .1s;
+    padding: 1px 0;
+    position: relative;
+    height: 37px;
+}
+
+.dcCalendarAddLunar .calendarTable td.selected {
+    background-color: #fab804;
+}
+
+.dcCalendarAddLunar .calendarTable td p {
+    font-size: .3rem
+}
+
+.dcCalendarAddLunar .calendarTable td .solarValue {
+    font-size: 12px
+}
+
+.dcCalendarAddLunar .calendarTable td .lMonth {
+    display: none
+}
+
+.dcCalendarAddLunar .dcDateDetail {
+    display: none;
+    width: 150px;
+    height: 80px;
+    font: 1em "Times New Roman";
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9)
+}
+
+.calendarMouseMove {
+    box-shadow: -1px 1px 5px #fff;
+    -webkit-box-shadow: -1px 1px 5px #fff;
+    -moz-box-shadow: -1px 1px 5px #fff;
+    -o-box-shadow: -1px 1px 5px #fff;
+    transform: translate3d(2px, -2px, 0)
+}
+
+.dcCalendar:after {
+    content: "";
+    display: block;
+    clear: both
+}
+
+.cal {
+    padding: 0;
+    margin-top: 5px;
+}
+
+.dcAccordion {
+    background: linear-gradient(#1d1d1d, #35ff10);
+    width: 100%;
+    text-align: center;
+    font: 18px "åŽæ–‡æ¥·ä½“";
+    line-height: 40px
+}
+
+.dcAccordion a {
+    width: 100%;
+    display: inline-block;
+    color: #fff
+}
+
+.dcAccordion li ul {
+    font-size: 12px;
+    line-height: 30px;
+    height: 0;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.2);
+    transition: all .3s
+}
+
+.dcAccordion a:hover {
+    background: rgba(255, 255, 255, 0.3)
+}
+
+.dcAccordionAddAnimate {
+    background: linear-gradient(#1d1d1d, #35ff10);
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px
+}
+
+.dcAccordionAddAnimate a {
+    width: 100%;
+    display: inline-block;
+    color: #fff
+}
+
+.dcAccordionAddAnimate li ul {
+    font-size: 12px;
+    line-height: 30px;
+    height: 0;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.2);
+    transition: all .3s
+}
+
+.dcAccordionAddAnimate a:hover {
+    background: rgba(255, 255, 255, 0.3)
+}
+
+.pagers .pagination {
+    margin: 0 0;
+    float: right;
+}
+
+.pagers .pagerinfo {
+    display: inline-block;
+    width: 200px;
+    vertical-align: top;
+}
+
+.pagerinfo .form-control {
+    display: inline-block;
+    width: 60px;
+}
+
+.evts {
+    font-size: 12px;
+    font-style: normal;
+    display: inline-block;
+    height: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
